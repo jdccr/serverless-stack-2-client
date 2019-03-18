@@ -3,9 +3,9 @@ import { API } from "aws-amplify";
 import { Elements, StripeProvider } from "react-stripe-elements";
 import BillingForm from "../components/BillingForm";
 import config from "../config";
-import "./Settings.css";
+import "./Billing.css";
 
-export default class Settings extends Component {
+export default class Billing extends Component {
   constructor(props) {
     super(props);
 
@@ -44,7 +44,7 @@ export default class Settings extends Component {
   
   render() {
     return (
-      <div className="Settings">
+      <div className="Billing">
         <StripeProvider apiKey={config.STRIPE_KEY}>
           <Elements>
             <BillingForm

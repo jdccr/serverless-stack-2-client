@@ -3,6 +3,7 @@ import { Auth } from "aws-amplify";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 export default class Login extends Component {
   constructor(props) {
@@ -69,6 +70,7 @@ export default class Login extends Component {
             text="Login"
             loadingText="Logging in…"
           />
+          <Link to="/login/reset">Forgot password?</Link>
         </form>
       </div>
     );
